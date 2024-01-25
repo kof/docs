@@ -153,7 +153,7 @@
   padding-left: 0;
 }
 
-.fa-ul>li {
+.fa-ul > li {
   position: relative;
 }
 
@@ -307,7 +307,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   .fa-beat,
   .fa-bounce,
   .fa-fade,
@@ -331,7 +330,6 @@
 }
 
 @-webkit-keyframes fa-beat {
-
   0%,
   90% {
     -webkit-transform: scale(1);
@@ -345,7 +343,6 @@
 }
 
 @keyframes fa-beat {
-
   0%,
   90% {
     -webkit-transform: scale(1);
@@ -365,20 +362,30 @@
   }
 
   10% {
-    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1),
-        var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
-    transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+    -webkit-transform: scale(
+        var(--fa-bounce-start-scale-x, 1.1),
+        var(--fa-bounce-start-scale-y, 0.9)
+      )
+      translateY(0);
+    transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9))
+      translateY(0);
   }
 
   30% {
-    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
-    transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1))
+      translateY(var(--fa-bounce-height, -0.5em));
+    transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1))
+      translateY(var(--fa-bounce-height, -0.5em));
   }
 
   50% {
-    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05),
-        var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
-    transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+    -webkit-transform: scale(
+        var(--fa-bounce-land-scale-x, 1.05),
+        var(--fa-bounce-land-scale-y, 0.95)
+      )
+      translateY(0);
+    transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95))
+      translateY(0);
   }
 
   57% {
@@ -404,20 +411,30 @@
   }
 
   10% {
-    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1),
-        var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
-    transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+    -webkit-transform: scale(
+        var(--fa-bounce-start-scale-x, 1.1),
+        var(--fa-bounce-start-scale-y, 0.9)
+      )
+      translateY(0);
+    transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9))
+      translateY(0);
   }
 
   30% {
-    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
-    transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1))
+      translateY(var(--fa-bounce-height, -0.5em));
+    transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1))
+      translateY(var(--fa-bounce-height, -0.5em));
   }
 
   50% {
-    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05),
-        var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
-    transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+    -webkit-transform: scale(
+        var(--fa-bounce-land-scale-x, 1.05),
+        var(--fa-bounce-land-scale-y, 0.95)
+      )
+      translateY(0);
+    transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95))
+      translateY(0);
   }
 
   57% {
@@ -449,7 +466,6 @@
 }
 
 @-webkit-keyframes fa-beat-fade {
-
   0%,
   100% {
     opacity: var(--fa-beat-fade-opacity, 0.4);
@@ -465,7 +481,6 @@
 }
 
 @keyframes fa-beat-fade {
-
   0%,
   100% {
     opacity: var(--fa-beat-fade-opacity, 0.4);
@@ -482,27 +497,35 @@
 
 @-webkit-keyframes fa-flip {
   50% {
-    -webkit-transform: rotate3d(var(--fa-flip-x, 0),
-        var(--fa-flip-y, 1),
-        var(--fa-flip-z, 0),
-        var(--fa-flip-angle, -180deg));
-    transform: rotate3d(var(--fa-flip-x, 0),
-        var(--fa-flip-y, 1),
-        var(--fa-flip-z, 0),
-        var(--fa-flip-angle, -180deg));
+    -webkit-transform: rotate3d(
+      var(--fa-flip-x, 0),
+      var(--fa-flip-y, 1),
+      var(--fa-flip-z, 0),
+      var(--fa-flip-angle, -180deg)
+    );
+    transform: rotate3d(
+      var(--fa-flip-x, 0),
+      var(--fa-flip-y, 1),
+      var(--fa-flip-z, 0),
+      var(--fa-flip-angle, -180deg)
+    );
   }
 }
 
 @keyframes fa-flip {
   50% {
-    -webkit-transform: rotate3d(var(--fa-flip-x, 0),
-        var(--fa-flip-y, 1),
-        var(--fa-flip-z, 0),
-        var(--fa-flip-angle, -180deg));
-    transform: rotate3d(var(--fa-flip-x, 0),
-        var(--fa-flip-y, 1),
-        var(--fa-flip-z, 0),
-        var(--fa-flip-angle, -180deg));
+    -webkit-transform: rotate3d(
+      var(--fa-flip-x, 0),
+      var(--fa-flip-y, 1),
+      var(--fa-flip-z, 0),
+      var(--fa-flip-angle, -180deg)
+    );
+    transform: rotate3d(
+      var(--fa-flip-x, 0),
+      var(--fa-flip-y, 1),
+      var(--fa-flip-z, 0),
+      var(--fa-flip-angle, -180deg)
+    );
   }
 }
 
@@ -928,7 +951,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url('/static/fonts/fa-brands-400.woff2') format('woff2'),
+  src:
+    url('/static/fonts/fa-brands-400.woff2') format('woff2'),
     url('/fonts/fa-brands-400.woff2') format('woff2');
 }
 
@@ -937,7 +961,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url('/static/fonts/fa-solid-900.woff2') format('woff2'),
+  src:
+    url('/static/fonts/fa-solid-900.woff2') format('woff2'),
     url('/fonts/fa-solid-900.woff2') format('woff2');
 }
 
@@ -985,7 +1010,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 300;
   font-display: block;
-  src: url('/static/fonts/fa-light-300.woff2') format('woff2'),
+  src:
+    url('/static/fonts/fa-light-300.woff2') format('woff2'),
     url('/fonts/fa-light-300.woff2') format('woff2');
 }
 
@@ -1010,7 +1036,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url('/static/fonts/fa-regular-400.woff2') format('woff2'),
+  src:
+    url('/static/fonts/fa-regular-400.woff2') format('woff2'),
     url('/fonts/fa-regular-400.woff2') format('woff2');
 }
 
